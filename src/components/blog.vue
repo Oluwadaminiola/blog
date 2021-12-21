@@ -36,7 +36,6 @@ export default {
   methods: {
     selectPost(post) {
       const routeName = this.$route.name;
-      console.log(routeName);
       if (routeName == "Blog") {
         this.$emit("selectedPostid", post.id);
       } else {

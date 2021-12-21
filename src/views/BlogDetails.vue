@@ -64,8 +64,6 @@ export default {
         .then((res) => {
           this.posts = res.data;
           this.selectedPost = this.posts.find((item) => item.id == this.id);
-
-          console.log(this.selectedPost);
           this.loading = false;
         })
         .finally(() => {

@@ -10,7 +10,6 @@ export default new Vuex.Store({
   },
   mutations: {
     UPDATE_BLOGPOSTS(state, data) {
-      console.log("vdfv", data);
       state.posts = data;
     },
     SELECT_POST(state, data) {
