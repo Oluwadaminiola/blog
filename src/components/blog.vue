@@ -14,7 +14,7 @@
         {{ blog.type }} . {{ $moment(blog.date).fromNow() }}
       </div>
       <div class="card_body_title">
-        {{ blog.title.rendered.slice(0, 40) || "-" }}...
+        {{ blog.title.rendered.slice(0, 35) || "-" }}...
       </div>
       <div
         class="card_body_text"

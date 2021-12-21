@@ -34,7 +34,7 @@
         .card {
           display: block;
           border: 1px solid $light-grey-2;
-          min-height: 402px;
+          min-height: 432px;
           &_img {
             margin-right: unset;
             width: 100%;
@@ -42,8 +42,8 @@
           }
           &_body {
             &_text {
-              min-height: 100px;
-              max-height: unset;
+              height: 84px;
+              min-height: unset;
             }
           }
         }
@@ -58,10 +58,18 @@
       border-radius: 5px;
       padding: 10px;
       height: 412px;
+      @media (max-width: 630px) {
+        height: 432px;
 
+        &_body{
+          &_text{
+            height: 84px;
+          }
+        }
+      }
       &_body {
         padding-top: 14px;
-        font-family: 'Raleway', sans-serif;
+        font-family: "Raleway", sans-serif;
         &_tag {
           font-weight: 500;
           font-size: 12px;
@@ -82,7 +90,7 @@
           line-height: 21px;
           color: $light-grey;
           height: 74px;
-          font-family: 'Raleway', sans-serif;
+          font-family: "Raleway", sans-serif;
           a {
             text-decoration: none;
             font-weight: 600;
@@ -96,7 +104,7 @@
           align-items: center;
 
           &_readFull {
-            font-family: 'Raleway', sans-serif;
+            font-family: "Raleway", sans-serif;
             display: flex;
             align-items: center;
             font-weight: bold;
@@ -120,7 +128,7 @@
   }
 }
 .more {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 24px;
   line-height: 29px;
@@ -131,7 +139,7 @@
   padding: 90px 10px;
   margin: 0 auto;
   &_tag {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -144,7 +152,7 @@
     }
   }
   &_title {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 900;
     font-size: 32px;
     line-height: 38px;
