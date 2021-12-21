@@ -1,8 +1,15 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div class="container">
+    <div class="nav">
+      <div>
+        <img src="/images/svg/logo.svg" alt="logo" />
+      </div>
+      <div class="nav_icons">
+        <a href="#"><img src="/images/svg/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="/images/svg/dribbble.svg" alt="dribble" /></a>
+        <a href="#"><img src="/images/svg/figma.svg" alt="figma" /></a>
+        <a href="#"><img src="/images/svg/github.svg" alt="github" /></a>
+      </div>
     </div>
     <router-view />
   </div>
