@@ -48,10 +48,18 @@ export default {
         .then((res) => {
           this.posts = res.data;
           this.$store.commit("UPDATE_BLOGPOSTS", this.posts);
+
           this.loading = false;
         })
         .catch(() => {
           this.loading = false;
+          this.$swal({
+            position: "top-end",
+            type: "warining",
+            text: "An error occured, please refresh.",
+            showConfirmButton: false,
+            timer: 5000,
+          });
         });
     },
   },

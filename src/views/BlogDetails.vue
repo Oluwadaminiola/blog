@@ -66,6 +66,15 @@ export default {
           this.selectedPost = this.posts.find((item) => item.id == this.id);
           this.loading = false;
         })
+        .catch(() => {
+          this.$swal({
+            position: "top-end",
+            type: "warining",
+            text: "An error occured, please refresh.",
+            showConfirmButton: false,
+            timer: 5000,
+          });
+        })
         .finally(() => {
           this.loading = false;
         });
